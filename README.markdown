@@ -12,10 +12,10 @@ The main functions are describe below:
 
 ### Get started ###
 
-    WStringC *string = String("Hello World");
+    `WStringC *string = String("Hello World");
     string->show(string);
     string->destroy(string);
-    which(is_easy) to_remember();
+    which(is_easy) to_remember();`
 
 ## Installation ##
 ~~~
