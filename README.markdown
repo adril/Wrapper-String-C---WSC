@@ -18,12 +18,13 @@ And now some code:
     string->destroy(string);
     which(is_easy) to_remember();
 
-~~~
-
 ## Installation ##
+~~~
+
 
 
 ~~~
+
 # Header 1 #
 ## Header 2 ##
 ### Header 3 ###             (Hashes on right are optional)
