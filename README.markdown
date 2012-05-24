@@ -5,18 +5,18 @@ The main functions are describe below:
 
 * creating a WStringC wich is a kind of object, it have to be passed to each functions every times.
 * playing with it :)
-* append - split - replace - compare character (char), string(char *), WStringC.
+* append - split - replace (soon) - compare character (char), string(char *), WStringC.
 
 
 ## Demos ##
 
 ### Get started ###
 
-Include the header file
+First include the header file
 
 `#include "WStringC.h"`
 
-First we declare WString object and set it with String function which takes the string parameter. 
+Then we declare WString object and set it with String function which takes the string parameter. 
 
     WStringC *string = String("Hello World");
     string->show(string);
