@@ -21,13 +21,10 @@ The main functions are describe below:
 
       string->append('x', string);
 
-~~~
-
 ### Append String ###
 
       string->append_str_string("Wrap", string);
 
-~~~
 
 ### Append WStringC ###
 
