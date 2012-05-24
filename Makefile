@@ -10,7 +10,7 @@ INC		=	-I. -I./include/
 
 OBJ		=	$(SRC:.c=.o)
 CC		=	clang
-CFLAGS          =       -Wimplicit-function-declaration -pedantic
+CFLAGS          =       -g -ggdb
 CDEBUG          =       -g -ggdb
 RM		=	rm -Rf
 ECHO		=	echo -e

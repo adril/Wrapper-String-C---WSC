@@ -46,9 +46,10 @@ void destroy(WStringC *string)
       //printf("destroying: %c\n", tmp->character->c);
       sav = tmp;
       tmp = tmp->next;
+      free(sav->character);
       free(sav);
     }
-  // free(string);
+  free(string);
 }
 
 //INFO: display functions
@@ -89,10 +90,10 @@ void str_to_list(char const* str_string, WStringC *string)
 
   if (strlen(str_string) > 0)
     {
-      string->string = malloc(sizeof(*string->string));;
+      string->string = malloc(sizeof(*string->string));
       List *tmp = string->string;
 
-      for (i = 0; i < strlen(str_string); ++i)
+      for (i = 0; i < strlen(str_string); i++)
 	{
 	  (*(string->add))(str_string[i], tmp);
 	  //printf("add: str_string[%c] at index %d\n", str_string[i], i);

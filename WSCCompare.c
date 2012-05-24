@@ -21,7 +21,7 @@ int compare_str(char *str, WStringC *string)
   int i = 0;
   List *tmp = string->string;
 
-  while (tmp != NULL && str[i] != NULL)
+  while (tmp != NULL && str[i] != '\0')
     {
       if (tmp->character->c != str[i++])
 	{

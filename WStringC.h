@@ -45,7 +45,7 @@ struct		s_list
   List		*next;
 };
 
-WStringC* string(char const* string);
+WStringC* String(char const* string);
 void str_to_list(char const* str_string, WStringC *string);
 void add(char c, List *string);
 void destroy(WStringC *string);

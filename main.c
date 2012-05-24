@@ -8,6 +8,9 @@ int		main(int ac, char **av)
   WStringC *_string = String("hello world - ");
 
   _string->show(_string);
+
+
+
   printf("[string]: %s\n", _string->get(_string));
 
   //INFO: append char test
@@ -28,6 +31,7 @@ int		main(int ac, char **av)
   _string->show(_string);
   printf("[string] [after append]: %s\n", _string->get(_string));
 
+
   //INFO: append String test
   WStringC *wscString = String("");
   wscString->show(wscString);
@@ -44,6 +48,7 @@ int		main(int ac, char **av)
   wscString->show(wscString);
 
   wscString->destroy(wscString);
+  _string->destroy(_string);
 
   //INFO: split String
   WStringC *splitMe = String("hello;World;42;42|24");
@@ -57,6 +62,7 @@ int		main(int ac, char **av)
       //splitList[i]->destroy(splitList[i]);
       i++;
     }
+  //  free(splitList);
 
   //INFO: compare
   i = 0;
@@ -79,6 +85,7 @@ int		main(int ac, char **av)
       i++;
     }
 
-  //free(splitList);
+  free(splitList);
   splitMe->destroy(splitMe);
+
 }
