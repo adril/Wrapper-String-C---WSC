@@ -22,7 +22,11 @@ struct s_String
   void		(*append_str_string)(char const* str_string, WStringC *string);
   void		(*append_string)(WStringC *src_string, WStringC *string);
   //
-  WStringC**      (*split)(char *separator, WStringC *string);
+  WStringC**    (*split)(char *separator, WStringC *string);
+  //
+  int		(*compare)(char c, WStringC *string);
+  int		(*compare_str)(char *str, WStringC *string);
+  int		(*compare_string)(WStringC *string_src, WStringC *string);
   //
   void		(*show)(WStringC *string);
   char*		(*get)(WStringC *string);
@@ -51,6 +55,10 @@ void append_str_string(char const* str_string, WStringC *string);
 void append_string(WStringC *src_string, WStringC *string);
 
 WStringC **split(char *separator, WStringC *string);
+
+int compare(char c, WStringC *string);
+int compare_str(char *str, WStringC *string);
+int compare_string(WStringC *string_src, WStringC *string);
 
 List* last(WStringC *string);
 void show(WStringC *string);

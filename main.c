@@ -54,9 +54,31 @@ int		main(int ac, char **av)
   while (splitList[i] != NULL)
     {
       splitList[i]->show(splitList[i]);
+      //splitList[i]->destroy(splitList[i]);
+      i++;
+    }
+
+  //INFO: compare
+  i = 0;
+  while (splitList[i] != NULL)
+    {
+      splitList[i]->show(splitList[i]);
+      if (splitList[i + 1] != NULL)
+	{
+	  if (splitList[i]->compare_string(splitList[i], splitList[i + 1]))
+	    {
+	      printf("[compare] [equal]: %s %s\n", splitList[i]->get(splitList[i]), splitList[i + 1]->get(splitList[i + 1]));
+	    }
+	  else
+	    {
+	      printf("[compare] [diferent]: %s %s\n", splitList[i]->get(splitList[i]), splitList[i + 1]->get(splitList[i + 1]));
+	    }
+	}
+
       splitList[i]->destroy(splitList[i]);
       i++;
     }
+
   //free(splitList);
   splitMe->destroy(splitMe);
 }

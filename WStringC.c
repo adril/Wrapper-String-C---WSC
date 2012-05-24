@@ -8,12 +8,22 @@ WStringC* String(char const* str_string)
   string->destroy = destroy;
 
   string->add = add;
+  string->last = last;
+
+  //INFO: append
   string->append = append;
   string->append_str_string = append_str_string;
   string->append_string = append_string;
-  string->last = last;
 
+  //INFO: split
   string->split = split;
+
+  //INFO: compare
+  string->compare = compare;
+  string->compare_str = compare_str;
+  string->compare_string = compare_string;
+
+  //INFO: replace
 
   //INFO: misc functions
   string->show = show;

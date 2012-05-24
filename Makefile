@@ -3,7 +3,8 @@ NAME		=	WStringC_exemple
 SRC		=	main.c\
 			WStringC.c\
 			WSCsplit.c\
-			WSCappend.c
+			WSCappend.c\
+			WSCCompare.c
 
 INC		=	-I. -I./include/
 
