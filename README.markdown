@@ -1,5 +1,22 @@
-Wrapper-String-C---WSC
-======================
+# Wrapper-String-C---WSC #
+
+Wrapper-String-C (WSC) is a simple library C wrapper to maipulate strings.
+The main functions are describe below:
+
+* creating a WStringC wich is a kind of object, it have to be passed to each functions every times.
+* playing with it :)
+* append - split - replace - compare character (char), string(char *), WStringC.
+
+
+## Demos ##
+
+   //
+   WStringC *string = String("Hello World");
+   string->show(string);
+   string->destroy(string);
+~~~
+
+## Installation ##
 
 # Header 1 #
 ## Header 2 ##
@@ -21,7 +38,7 @@ feeling-lucky), a [wiki: test] link to a Wikipedia page, and a link to
 Now some inline markup like _italics_,  **bold**, and `code()`. Note that underscores in 
 words are ignored in Markdown Extra.
 
-![picture alt](/images/photo.jpeg "Title is optional")     
+
 
 > Blockquotes are like quoted text in email replies
 >> And, they can be nested
