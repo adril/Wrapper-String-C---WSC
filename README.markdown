@@ -17,11 +17,19 @@ The main functions are describe below:
     string->destroy(string);
     which(is_easy) to_remember();
 
-### Get started ###
+### Append Character ###
 
-      _string->append('x', _string);
-      _string->append_str_string("Wrap", _string);
+      string->append('x', string);
 
+~~~
+
+### Append String ###
+
+      string->append_str_string("Wrap", string);
+
+~~~
+
+### Append WStringC ###
 
     //INFO: split String
     WStringC *splitMe = String("hello;World;42;42|24");
@@ -37,6 +45,8 @@ The main functions are describe below:
       }
     free(splitList);
     free(splitMe);
+
+~~~
 
 ## Installation ##
 ~~~
