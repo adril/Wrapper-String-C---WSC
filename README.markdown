@@ -12,6 +12,10 @@ The main functions are describe below:
 
 ### Get started ###
 
+Include the header file
+
+`#include "WStringC.h"`
+
 First we declare WString object and set it with String function which takes the string parameter. 
 
     WStringC *string = String("Hello World");
