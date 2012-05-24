@@ -44,11 +44,7 @@ The main functions are describe below:
 
 
 ## Installation ##
-~~~
 
-
-
-~~~
 
 # Header 1 #
 ## Header 2 ##
