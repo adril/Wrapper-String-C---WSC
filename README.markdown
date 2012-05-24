@@ -1,6 +1,6 @@
 # Wrapper-String-C---WSC #
 
-Wrapper-String-C (WSC) is a simple library C wrapper to maipulate strings.
+Wrapper-String-C (WSC) is a simple library C wrapper to manipulate strings.
 The main functions are describe below:
 
 * creating a WStringC wich is a kind of object, it have to be passed to each functions every times.
@@ -10,9 +10,8 @@ The main functions are describe below:
 
 ## Demos ##
 
-And now some code:
+### Get started ###
 
-    // Code is just text indented a bit
     WStringC *string = String("Hello World");
     string->show(string);
     string->destroy(string);
