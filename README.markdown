@@ -10,10 +10,14 @@ The main functions are describe below:
 
 ## Demos ##
 
-   //
-   WStringC *string = String("Hello World");
-   string->show(string);
-   string->destroy(string);
+And now some code:
+
+    // Code is just text indented a bit
+    WStringC *string = String("Hello World");
+    string->show(string);
+    string->destroy(string);
+    which(is_easy) to_remember();
+
 ~~~
 
 ## Installation ##
