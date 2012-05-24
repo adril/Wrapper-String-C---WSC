@@ -12,18 +12,23 @@ The main functions are describe below:
 
 ### Get started ###
 
+First we declare WString object and set it with String function which takes the string parameter. 
+
     WStringC *string = String("Hello World");
     string->show(string);
     string->destroy(string);
 
 ### Append Character ###
 
-      string->append('x', string);
+    WStringC *string = String("Hello World");
+    string->append('x', string);
+    string->destroy(string);
 
 ### Append String ###
-
-      string->append_str_string("Wrap", string);
-
+    
+    WStringC *string = String("Hello World");
+    string->append_str_string("Wrap", string);
+    string->destroy(string);
 
 ### Append WStringC ###
 
@@ -42,16 +47,46 @@ The main functions are describe below:
     free(splitList);
     free(splitMe);
 
+### Compare Character ###
+    
+    WStringC *string = String("x");
+
+    if (string->compare('x', string))
+       printf("string == x");
+    else
+       printf("string != x");
+
+    string->destroy(string);
+
+### Compare String ###
+
+    WStringC *string = String("Hello World");
+
+    if (string->compare_str("Hello World", string))
+       printf("string == Hello World");
+    else
+       printf("string != Hello World");
+
+    string->destroy(string);
+
+### Compare WStringC ###
+
+    WStringC *string = String("Hello World");
+    WStringC *stringToCompare = String("Hello World");
+
+    if (string->compare_string(stringToCompare, string))
+       printf("string == Hello World");
+    else
+       printf("string != Hello World");
+
+    string->destroy(string);
+
 
 ## Installation ##
 
 ### Comming soon ###
 
 ...
-
-* * * *
-****
---------------------------
 
 
 ## Markdown plus tables ##
