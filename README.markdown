@@ -15,7 +15,6 @@ The main functions are describe below:
     WStringC *string = String("Hello World");
     string->show(string);
     string->destroy(string);
-    which(is_easy) to_remember();
 
 ### Append Character ###
 
@@ -43,7 +42,6 @@ The main functions are describe below:
     free(splitList);
     free(splitMe);
 
-~~~
 
 ## Installation ##
 ~~~
