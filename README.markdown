@@ -12,10 +12,31 @@ The main functions are describe below:
 
 ### Get started ###
 
-    `WStringC *string = String("Hello World");
+    WStringC *string = String("Hello World");
     string->show(string);
     string->destroy(string);
-    which(is_easy) to_remember();`
+    which(is_easy) to_remember();
+
+### Get started ###
+
+      _string->append('x', _string);
+      _string->append_str_string("Wrap", _string);
+
+
+    //INFO: split String
+    WStringC *splitMe = String("hello;World;42;42|24");
+    splitMe->show(splitMe);
+
+    WStringC **splitList = splitMe->split(";|", splitMe);
+    int i = 0;
+    while (splitList[i] != NULL)
+      {
+        splitList[i]->show(splitList[i]);
+        splitList[i]->destroy(splitList[i]);
+        i++;
+      }
+    free(splitList);
+    free(splitMe);
 
 ## Installation ##
 ~~~
