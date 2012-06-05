@@ -78,6 +78,8 @@ Then we declare WString object and set it with String function which takes the s
 
     string->destroy(string);
 
+##### Output #####
+
 > string == x
 
 ### Compare String ###
