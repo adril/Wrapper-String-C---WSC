@@ -23,9 +23,11 @@ Then we declare WString object and set it with String function which takes the s
     string->show(string);
     string->destroy(string);
 
-#### Output ####
-----------------
+##### Output #####
+
 > Hello World
+
+----------------
 
 ### Append Character ###
 
@@ -35,7 +37,7 @@ Then we declare WString object and set it with String function which takes the s
     string->destroy(string);
 
 ### Append String ###
-    
+
     WStringC *string = String("Hello World");
 
     string->append_str_string("Wrap", string);
@@ -76,7 +78,7 @@ Then we declare WString object and set it with String function which takes the s
 
     string->destroy(string);
 
-string == x
+> string == x
 
 ### Compare String ###
 
