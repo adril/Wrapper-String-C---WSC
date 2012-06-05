@@ -23,7 +23,7 @@ Then we declare WString object and set it with String function which takes the s
     string->show(string);
     string->destroy(string);
 
-	`Hello World`
+Hello World
 
 ### Append Character ###
 
@@ -56,12 +56,12 @@ Then we declare WString object and set it with String function which takes the s
     free(splitList);
     free(splitMe);
 
-	`hello;World;42;42|24
-	hello
-	World
-	42
-	42
-	24`
+hello;World;42;42|24
+hello
+World
+42
+42
+24
 
 ### Compare Character ###
     
@@ -74,7 +74,7 @@ Then we declare WString object and set it with String function which takes the s
 
     string->destroy(string);
 
-        `string == x`
+string == x
 
 ### Compare String ###
 
