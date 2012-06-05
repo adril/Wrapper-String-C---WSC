@@ -19,25 +19,30 @@ First include the header file
 Then we declare WString object and set it with String function which takes the string parameter. 
 
     WStringC *string = String("Hello World");
+
     string->show(string);
     string->destroy(string);
+
+	`Hello World`
 
 ### Append Character ###
 
     WStringC *string = String("Hello World");
+
     string->append('x', string);
     string->destroy(string);
 
 ### Append String ###
     
     WStringC *string = String("Hello World");
+
     string->append_str_string("Wrap", string);
     string->destroy(string);
 
 ### Append WStringC ###
 
-    //INFO: split String
     WStringC *splitMe = String("hello;World;42;42|24");
+
     splitMe->show(splitMe);
 
     WStringC **splitList = splitMe->split(";|", splitMe);
@@ -51,6 +56,13 @@ Then we declare WString object and set it with String function which takes the s
     free(splitList);
     free(splitMe);
 
+	`hello;World;42;42|24
+	hello
+	World
+	42
+	42
+	24`
+
 ### Compare Character ###
     
     WStringC *string = String("x");
@@ -61,6 +73,8 @@ Then we declare WString object and set it with String function which takes the s
        printf("string != x");
 
     string->destroy(string);
+
+        `string == x`
 
 ### Compare String ###
 
@@ -73,6 +87,8 @@ Then we declare WString object and set it with String function which takes the s
 
     string->destroy(string);
 
+	`string == Hello World`
+
 ### Compare WStringC ###
 
     WStringC *string = String("Hello World");
@@ -84,6 +100,8 @@ Then we declare WString object and set it with String function which takes the s
        printf("string != Hello World");
 
     string->destroy(string);
+
+	`string == Hello World`
 
 
 ## Installation ##

@@ -1,9 +1,27 @@
 #include "WStringC.h"
+#include "test.h"
 
 int		main(int ac, char **av)
 {
   (void)ac;
   (void)av;
+
+  printf("____________________________________________________________________\n");
+  test();
+  printf("____________________________________________________________________\n");
+  test_a();
+  printf("____________________________________________________________________\n");
+  test_b();
+  printf("____________________________________________________________________\n");
+  test_c();
+  printf("____________________________________________________________________\n");
+  test_d();
+  printf("____________________________________________________________________\n");
+  test_e();
+  printf("____________________________________________________________________\n");
+  test_f();
+
+  return 0;
 
   WStringC *_string = String("hello world - ");
 
@@ -50,6 +68,20 @@ int		main(int ac, char **av)
   wscString->destroy(wscString);
   _string->destroy(_string);
 
+
+  //INFO: replace
+
+  WStringC *replaceString = String("hello WString");
+  replaceString->show(replaceString);
+
+  replaceString = replaceString->replace_str("WString", "World42", replaceString);
+  replaceString->show(replaceString);
+
+  replaceString->replace('o', 'O', replaceString);
+  replaceString->show(replaceString);
+
+  replaceString->destroy(replaceString);
+
   //INFO: split String
   WStringC *splitMe = String("hello;World;42;42|24");
   splitMe->show(splitMe);
@@ -85,7 +117,6 @@ int		main(int ac, char **av)
       i++;
     }
 
-  free(splitList);
   splitMe->destroy(splitMe);
-
+  free(splitList);
 }

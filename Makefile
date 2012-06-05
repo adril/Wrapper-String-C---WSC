@@ -4,7 +4,9 @@ SRC		=	main.c\
 			WStringC.c\
 			WSCsplit.c\
 			WSCappend.c\
-			WSCCompare.c
+			WSCCompare.c\
+			WSCReplace.c\
+			test.c
 
 INC		=	-I. -I./include/
 

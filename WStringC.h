@@ -28,6 +28,9 @@ struct s_String
   int		(*compare_str)(char *str, WStringC *string);
   int		(*compare_string)(WStringC *string_src, WStringC *string);
   //
+  int		(*replace)(char c_old, char c_new, WStringC *string);
+  WStringC*    	(*replace_str)(char *str_old, char *str_new, WStringC *string);
+  //
   void		(*show)(WStringC *string);
   char*		(*get)(WStringC *string);
   //
@@ -59,6 +62,9 @@ WStringC **split(char *separator, WStringC *string);
 int compare(char c, WStringC *string);
 int compare_str(char *str, WStringC *string);
 int compare_string(WStringC *string_src, WStringC *string);
+
+int replace(char c_old, char c_new, WStringC *string);
+WStringC *replace_str(char *str_old, char *str_new, WStringC *string);
 
 List* last(WStringC *string);
 void show(WStringC *string);

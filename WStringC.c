@@ -24,6 +24,10 @@ WStringC* String(char const* str_string)
   string->compare_string = compare_string;
 
   //INFO: replace
+  string->replace = replace;
+  string->replace_str = replace_str;
+
+  //INFO: replace
 
   //INFO: misc functions
   string->show = show;
