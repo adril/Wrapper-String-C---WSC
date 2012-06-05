@@ -27,6 +27,9 @@ Then we declare WString object and set it with String function which takes the s
 
 > Hello World
 
+
+___________________________________________
+
 ### Append Character ###
 
     WStringC *string = String("Hello World");
@@ -39,6 +42,8 @@ Then we declare WString object and set it with String function which takes the s
 
 > Hello Worldx
 
+___________________________________________
+
 ### Append String ###
 
     WStringC *string = String("Hello World");
@@ -50,6 +55,8 @@ Then we declare WString object and set it with String function which takes the s
 ##### Output #####
 
 > Hello WorldWrap
+
+___________________________________________
 
 ### Append WStringC ###
 
@@ -102,6 +109,8 @@ ___________________________________________
 
 > string == x
 
+___________________________________________
+
 ### Compare String ###
 
     WStringC *string = String("Hello World");
@@ -117,6 +126,8 @@ ___________________________________________
 ##### Output #####
 
 > string == Hello World
+
+___________________________________________
 
 ### Compare WStringC ###
 
@@ -134,6 +145,7 @@ ___________________________________________
 
 > string == Hello World
 
+___________________________________________
 
 ## Installation ##
 
