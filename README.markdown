@@ -87,9 +87,9 @@ Then we declare WString object and set it with String function which takes the s
     WStringC *string = String("Hello World");
 
     if (string->compare_str("Hello World", string))
-       printf("string == Hello World");
+       printf("string == Hello World\n");
     else
-       printf("string != Hello World");
+       printf("string != Hello World\n");
 
     string->destroy(string);
 
@@ -104,9 +104,9 @@ Then we declare WString object and set it with String function which takes the s
     WStringC *stringToCompare = String("Hello World");
 
     if (string->compare_string(stringToCompare, string))
-       printf("string == Hello World");
+       printf("string == Hello World\n");
     else
-       printf("string != Hello World");
+       printf("string != Hello World\n");
 
     string->destroy(string);
 
