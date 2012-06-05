@@ -14,13 +14,16 @@ void		test_a()
   WStringC *string = String("Hello World");
 
   string->append('x', string);
+  string->show(string);
   string->destroy(string);
 }
 
 void		test_b()
 {
   WStringC *string = String("Hello World");
+
   string->append_str_string("Wrap", string);
+  string->show(string);
   string->destroy(string);
 }
 
@@ -28,7 +31,9 @@ void		test_c()
 {
   //INFO: split String
   WStringC *splitMe = String("hello;World;42;42|24");
+  printf("before split:\n\n");
   splitMe->show(splitMe);
+  printf("\nafter split:\n\n");
 
   WStringC **splitList = splitMe->split(";|", splitMe);
   int i = 0;

@@ -32,14 +32,24 @@ Then we declare WString object and set it with String function which takes the s
     WStringC *string = String("Hello World");
 
     string->append('x', string);
+    string->show(string);
     string->destroy(string);
+
+##### Output #####
+
+> Hello Worldx
 
 ### Append String ###
 
     WStringC *string = String("Hello World");
 
     string->append_str_string("Wrap", string);
+    string->show(string);
     string->destroy(string);
+
+##### Output #####
+
+> Hello WorldWrap
 
 ### Append WStringC ###
 
@@ -60,7 +70,12 @@ Then we declare WString object and set it with String function which takes the s
 
 ##### Output #####
 
+> before split:
+>  
 > hello;World;42;42|24  
+>  
+> after split:
+>  
 > hello  
 > World  
 > 42  
