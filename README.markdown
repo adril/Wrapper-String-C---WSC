@@ -27,8 +27,6 @@ Then we declare WString object and set it with String function which takes the s
 
 > Hello World
 
-----------------
-
 ### Append Character ###
 
     WStringC *string = String("Hello World");
@@ -59,6 +57,8 @@ Then we declare WString object and set it with String function which takes the s
       }
     free(splitList);
     free(splitMe);
+
+##### Output #####
 
 > hello;World;42;42|24
 > hello
@@ -91,6 +91,9 @@ Then we declare WString object and set it with String function which takes the s
 
     string->destroy(string);
 
+
+##### Output #####
+
 > string == Hello World
 
 ### Compare WStringC ###
@@ -104,6 +107,8 @@ Then we declare WString object and set it with String function which takes the s
        printf("string != Hello World");
 
     string->destroy(string);
+
+##### Output #####
 
 > string == Hello World
 
