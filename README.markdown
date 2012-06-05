@@ -84,6 +84,7 @@ Then we declare WString object and set it with String function which takes the s
 > 42  
 > 42  
 > 24  
+
 ___________________________________________
 
 ### Compare Character ###
