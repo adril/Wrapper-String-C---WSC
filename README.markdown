@@ -24,8 +24,8 @@ Then we declare WString object and set it with String function which takes the s
     string->destroy(string);
 
 #### Output ####
-
-> `Hello World`
+----------------
+> Hello World
 
 ### Append Character ###
 
@@ -58,12 +58,12 @@ Then we declare WString object and set it with String function which takes the s
     free(splitList);
     free(splitMe);
 
-hello;World;42;42|24
-hello
-World
-42
-42
-24
+> hello;World;42;42|24
+> hello
+> World
+> 42
+> 42
+> 24
 
 ### Compare Character ###
     
@@ -89,7 +89,7 @@ string == x
 
     string->destroy(string);
 
-	`string == Hello World`
+> string == Hello World
 
 ### Compare WStringC ###
 
@@ -103,7 +103,7 @@ string == x
 
     string->destroy(string);
 
-	`string == Hello World`
+> string == Hello World
 
 
 ## Installation ##
