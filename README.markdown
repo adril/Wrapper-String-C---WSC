@@ -23,7 +23,7 @@ Then we declare WString object and set it with String function which takes the s
     string->show(string);
     string->destroy(string);
 
-Hello World
+`Hello World`
 
 ### Append Character ###
 
