@@ -55,7 +55,10 @@ Then we declare WString object and set it with String function which takes the s
 
     WStringC *splitMe = String("hello;World;42;42|24");
 
+
+    printf("before split:\n\n");
     splitMe->show(splitMe);
+    printf("\nafter split:\n\n");
 
     WStringC **splitList = splitMe->split(";|", splitMe);
     int i = 0;

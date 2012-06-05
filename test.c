@@ -31,6 +31,7 @@ void		test_c()
 {
   //INFO: split String
   WStringC *splitMe = String("hello;World;42;42|24");
+
   printf("before split:\n\n");
   splitMe->show(splitMe);
   printf("\nafter split:\n\n");
