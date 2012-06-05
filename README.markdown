@@ -60,12 +60,12 @@ Then we declare WString object and set it with String function which takes the s
 
 ##### Output #####
 
-> hello;World;42;42|24 
+> hello;World;42;42|24  
 > hello  
-> World
-> 42
-> 42
-> 24
+> World  
+> 42  
+> 42  
+> 24  
 
 ### Compare Character ###
     
