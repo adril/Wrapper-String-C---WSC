@@ -23,16 +23,9 @@ Then we declare WString object and set it with String function which takes the s
     string->show(string);
     string->destroy(string);
 
-`Hello World`
-> Email-style angle brackets
+## Output ##
 
-> are used for blockquotes.
-
-> > And, they can be nested.
-
-> >
-> * You can quote a list.
-> * Etc.
+> `Hello World`
 
 ### Append Character ###
 
